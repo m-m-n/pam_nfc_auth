@@ -6,6 +6,7 @@ NFCカードを使用したPAM認証モジュール
 
 - nfc-reader
   - 内部で `/usr/local/bin/nfc-reader --timeout=30 --allow-list-file=/usr/local/etc/allowed-list.txt --user=ユーザー名` を呼び出す
+  - [https://github.com/m-m-n/nfc-reader](https://github.com/m-m-n/nfc-reader)
 
 ## インストール
 
