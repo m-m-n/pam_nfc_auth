@@ -60,3 +60,11 @@ auth  [success=2 default=ignore]  pam_unix.so nullok
 auth  [success=1 default=ignore]  pam_sss.so use_first_pass
 auth  requisite     pam_deny.so
 ```
+
+### IDリストファイル
+
+以下のコマンドで出力される結果を `/usr/local/etc/allowed-list.txt` に保存する
+
+```bash
+echo "$(id -nu)\t$(mkpasswd -m bcrypt $(nfc-reader))"
+```
